@@ -1,8 +1,11 @@
 from unidecode import unidecode
 
-#nome = input("Qual o seu nome:")
-#Nome= nome.upper()
-#print(Nome)
+def nome_maiusculas():
+    nome = input("Diga o seu nome:")
+    nome = nome.upper()
+    return nome
+
+print(nome_maiusculas())
 
 lista = [1,2,3,4,5,6]
 
@@ -12,19 +15,14 @@ def numpares(lista):
 
 print(numpares(lista))
 
-texto = """Coiso 1
-Coiso 2
-Coiso 3"""
 
 def invertetexto():
-    nomeficheiro = input("Escolha o nome do ficheiro:")
-    f = open(nomeficheiro, "r")
-    f1 = f[::-1]
-    return f1
+    nomeficheiro = input("Coloque o caminho para o ficheiro:")
+    for line in reversed(open(nomeficheiro).readlines()):
+        print(line.rstrip())
 
-#print(invertetexto())
+print(invertetexto())
 
-#f = str("Coiso coiso coisinha coisinha coisinha")
 
 def contador():
     nomeficheiro = input("Coloque o caminho para o ficheiro:")
@@ -43,23 +41,34 @@ def contador():
     sortlist = sortlist[:11:-1]
     return sortlist
 
-#print(contador())
+print(contador())
 
-def limpatexto():
-    nomeficheiro = input("Escolha o nome do ficheiro:")
+pontuacao = ["!", "," , ".", ":", ";", "-", "?", "'", '"', '/']
+troca = {"à" : "a", "á" : "a", "ã" : "a", "é" : "e", "è" : "e", "í" : "i", "ì" : "i", "ó" : "o", "ò" : "o", "õ" : "o",
+         "ú" : "u", "ù" : "u", "ç" : "c", "ñ" : "n"}
+
+def limpatexto(pontuacao, troca):
+    nomeficheiro = input("Coloque o caminho para o ficheiro:")
     f = open(nomeficheiro, "r")
-    f = str(f.readlines())
+    f = f.read()
+    for letter in f:
+        if letter in pontuacao:
+            f = f.replace(letter, (" "+letter))
+    for word, replacement in troca.items():
+        f = f.replace(word, replacement)
     f1 = f.lower()
-    f2 = None
-    for x in range(len(f1)):
-        if f2 == None:
-            f2 = unidecode(f1[x])
-        else:
-            f2 = f2 + unidecode(f1[x])
-    f3 = f2.split(" ")
-    return str(f3)
+    f1 = f1.strip()
+    #Usando o unidecode em vez de um dicionário
+    #f2 = None
+    #for x in range(len(f1)):
+        #if f2 == None:
+            #f2 = unidecode(f1[x])
+        #else:
+            #f2 = f2 + unidecode(f1[x])
+    #return f2
+    return f1
 
-print(limpatexto()) #ainda não funciona
+print(limpatexto(pontuacao, troca))
 
 s = "Inserir string aleatorio"
 
