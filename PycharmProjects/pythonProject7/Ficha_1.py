@@ -1,4 +1,5 @@
 from unidecode import unidecode
+import io
 
 def nome_maiusculas():
     nome = input("Diga o seu nome:")
@@ -18,7 +19,7 @@ print(numpares(lista))
 
 def invertetexto():
     nomeficheiro = input("Coloque o caminho para o ficheiro:")
-    for line in reversed(open(nomeficheiro).readlines()):
+    for line in reversed(io.open(nomeficheiro, "r", encoding="utf-8").readlines()):
         print(line.rstrip())
 
 print(invertetexto())
@@ -26,8 +27,8 @@ print(invertetexto())
 
 def contador():
     nomeficheiro = input("Coloque o caminho para o ficheiro:")
-    f = open(nomeficheiro, "r")
-    f = str(f.readlines())
+    f = io.open(nomeficheiro, "r", encoding="utf-8")
+    f = str(f.read())
     f1 = f.split(" ")
     Dict = {}
     for x in range(len(f1)):
@@ -35,7 +36,6 @@ def contador():
         for i in range(len(f1)):
             if f1[i] == f1[x]:
                 counter = counter + 1
-        if f1[x] not in Dict:
             Dict[f1[x]] = counter
     sortlist = sorted((value, key) for (key, value) in Dict.items())
     sortlist = sortlist[:11:-1]
@@ -49,7 +49,7 @@ troca = {"à" : "a", "á" : "a", "ã" : "a", "é" : "e", "è" : "e", "í" : "i",
 
 def limpatexto(pontuacao, troca):
     nomeficheiro = input("Coloque o caminho para o ficheiro:")
-    f = open(nomeficheiro, "r")
+    f = io.open(nomeficheiro, "r", encoding="utf-8")
     f = f.read()
     for letter in f:
         if letter in pontuacao:
