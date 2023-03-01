@@ -90,9 +90,8 @@ print(contacarateres(s))
 vogal = "aeiou"
 
 def vogais(s, vogal):
-    counter = 0
     S = s.lower()
-    vogais = [x for x in s if x in vogal]
+    vogais = [x for x in S if x in vogal]
     return len(vogais)
 
 print(vogais(s, vogal))
