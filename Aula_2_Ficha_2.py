@@ -127,14 +127,14 @@ Ficaram muito confusos, pois não conseguiam identificar a função daquilo.
 Seria para [VERBO INFINITIVO]? Tentaram perguntar a [NOME DE PESSOA FAMOSA], que também não sabia.
 Desanimados, pegaram no objeto e deixaram-no no [NOME DE LOCAL MASCULINO] mais próximo. 
 Talvez os [NOME PLURAL MASCULINO] de lá conseguissem encontrar alguma utilidade para aquilo."""
-#def mad_libs(texto):
-    #espacos = re.findall(r'\[[\w\s]+\]', texto)
-    #for espaco in espacos:
-        #resposta = str(input(f"{espaco}: "))
-        #texto = re.sub(r"\[[\w\s]+\]", resposta, texto, 1)
-    #return texto
+def mad_libs(texto):
+    espacos = re.findall(r'\[[\w\s]+\]', texto)
+    for espaco in espacos:
+        resposta = str(input(f"{espaco}: "))
+        texto = re.sub(r"\[[\w\s]+\]", resposta, texto, 1)
+    return texto
 
-#print(mad_libs(texto))
+print(mad_libs(texto))
 
 def remocao(texto):
     palavras = re.sub(r"\b(?<!-)(\S+)(\s\1)+\b", r"\1", texto)
