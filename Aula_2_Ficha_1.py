@@ -34,7 +34,7 @@ ex_5(x)
 frase = "Posso ir à casa de banho, por favor?"
 
 def palavra_magica(frase):
-    print(re.search(r'por favor?', frase)) #testardepois
+    print(re.search(r'por favor?', frase))
 
 palavra_magica(frase)
 
