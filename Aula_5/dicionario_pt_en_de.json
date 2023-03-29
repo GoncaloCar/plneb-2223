@@ -1,0 +1,102 @@
+{
+    "Palavra": {
+        "en": "Word",
+        "de": "Wort",
+        "des": ""
+    },
+    "Significado": {
+        "en": "Meaning",
+        "de": "Bedeutung",
+        "des": ""
+    },
+    "Å": {
+        "en": "A",
+        "de": "A",
+        "des": "Unidade angström; unidade de comprimento de onda, de radiações eletromagnéticas, igual a 10-7 mm."
+    },
+    "a, an": {
+        "en": "a, an",
+        "de": "ein, ein",
+        "des": "Pref. gr.: ausência ou negação (afasia, analgesia); - corruptela do pref. lat. ab (aversão)"
+    },
+    "AA": {
+        "en": "AA",
+        "de": "AA",
+        "des": "Sigla da instituição internacional dos Alcoólatras Anônimos."
+    },
+    "ãa": {
+        "en": "eh",
+        "de": "äh",
+        "des": "Abreviatura latina que significa &#34;de cada&#34;, usada para designar uma quantidade comum de vários componentes de uma formulação. Pronuncia-se &#34;aná&#34;."
+    },
+    "ab": {
+        "en": "ab",
+        "de": "ab",
+        "des": "Pref. lat.: negação ou separação (ablepsia, abaxial), aumento ou intensidade (absorver), movimento ou desvio (aborto)."
+    },
+    "abacteriano": {
+        "en": "abacterial",
+        "de": "abakteriell",
+        "des": "Isento de bactérias; não-bacteriano."
+    },
+    "abactus venter": {
+        "en": "abactus venter",
+        "de": "abactus venter",
+        "des": "Parto prematuro, artificial; aborto induzido."
+    },
+    "abafação": {
+        "en": "suffocation",
+        "de": "Erstickung",
+        "des": "Dispnéia; falta de ar; período pré-menstrual (pop.)."
+    },
+    "abafamento": {
+        "en": "suffocation",
+        "de": "Erstickung",
+        "des": "Diminuição dos ruídos orgânicos, principalmente das bulhas cardíacas."
+    },
+    "abaixador de língua": {
+        "en": "tongue depressor",
+        "de": "Holzspatel",
+        "des": "Instrumento para abaixar a língua, no exame da garganta; abaixa-língua; cataglosso."
+    },
+    "abalado": {
+        "en": "shaken up",
+        "de": "erschüttert",
+        "des": "Que sofreu abalo; deprimido."
+    },
+    "abalienação": {
+        "en": "abalienation",
+        "de": "Entfremdung",
+        "des": "Distúrbio mental."
+    },
+    "abalo": {
+        "en": "concussion",
+        "de": "Gehirnerschütterung",
+        "des": "Reação; choque ou alteração produzida por medicamento ou estado patológico."
+    },
+    "abaloado": {
+        "en": "shaken",
+        "de": "erschüttert",
+        "des": "Que apresenta forma de balão; bojado."
+    },
+    "abapical": {
+        "en": "apical",
+        "de": "apikal",
+        "des": "Situado na base ou na extremidade oposta do ápice."
+    },
+    "abarognose": {
+        "en": "abarognosis",
+        "de": "Abarognose",
+        "des": "Perda da sensibilidade ao peso."
+    },
+    "abarticulação": {
+        "en": "abarticulation",
+        "de": "Abartikulation",
+        "des": "Diartrose; deslocação."
+    },
+    "abarticular": {
+        "en": "abarticulate",
+        "de": "abartikulieren",
+        "des": "Relativo à abarticulação; que está fora da articulação."
+    }
+}
